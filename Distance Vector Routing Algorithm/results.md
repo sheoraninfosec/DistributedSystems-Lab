@@ -1,6 +1,6 @@
 ## SIMPLE NETWORK
 ### INPUT 
-```php
+```
 Enter the number of nodes: 5
 Enter the number of edges: 5
 Enter the node names (separated by spaces): A B C D E
