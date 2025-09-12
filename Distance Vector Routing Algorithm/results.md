@@ -1,6 +1,6 @@
-sheoraninfosec@Mac Assignment2 % /usr/local/bin/python3 "/Users/sheoraninfosec/Documents/Masters UPES/Distributed Systems/Assignment2/dvr_algorithm.py"
+### INPUT 
 
-
+```php
 Enter the number of nodes: 5
 Enter the number of edges: 5
 Enter the node names (separated by spaces): A B C D E
@@ -9,6 +9,10 @@ A D 1
 A E 7
 B C 1
 C D 1
+```
+### OUTPUT 
+
+```php
 -- Initial State of Routing Tables --
 *** Distance-Vector: Router A ***
 Dest   Cost   NextHop  Path
@@ -114,6 +118,7 @@ B      8      A        E->A->B
 C      9      A        E->A->B->C
 D      8      A        E->A->D
 E      0      E        E
+```
 
 sheoraninfosec@Mac Assignment2 % /usr/local/bin/python3 "/Users/sheoraninfosec/Document
 s/Masters UPES/Distributed Systems/Assignment2/dvr_algorithm.py"
