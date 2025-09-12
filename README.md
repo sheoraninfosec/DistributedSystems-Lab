@@ -47,21 +47,16 @@ python3 algorithms/dvr_algorithm.py < input.txt
 ## 🎓 Learning Objectives
 
 Understand the difference between centralized and distributed algorithms.
-
 Implement algorithms without relying on external libraries, to grasp fundamentals.
-
 Analyze time and message complexity of distributed protocols.
-
 Build a portfolio of clean, working code to showcase to recruiters.
 
 
 
 ### 📬 Connect With Me
 
-👤 Jigesh Sheoran
-📧 sheoraninfosec@proton.me
+👤 Jigesh Sheoran <br>
+📧 sheoraninfosec@proton.me <br>
+💼 LinkedIn <br>
 
-💼 LinkedIn
- (add your profile)
-🐙 GitHub
 
