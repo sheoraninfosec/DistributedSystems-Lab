@@ -14,15 +14,13 @@ python3 dvr-algorithm.py
 ## Input Format
 
 The program requires interactive user input to define the network's topology. You will be prompted for the following information:
-
-Number of Nodes: Enter a single integer representing the total number of routers in the network.
-
-Number of Edges: Enter a single integer representing the total number of direct connections between routers.
-
-Node Names: Enter the names of all the nodes on a single line, separated by spaces.
-
-Edge Information: For each edge, enter the two connected nodes and the weight (cost) of the link, separated by spaces. The program will prompt you for this information for each edge.
-
+```
+Number of Nodes: "Enter a single integer representing the total number of routers in the network"
+Number of Edges: "Enter a single integer representing the total number of direct connections between routers"
+Node Names: "Enter the names of all the nodes on a single line, separated by spaces"
+Edge Information: "For each edge, enter the two connected nodes and the weight (cost) of the link, separated by spaces."
+```
+```
 Example Input
 Enter the number of nodes: 5
 Enter the number of edges: 5
@@ -32,6 +30,7 @@ A D 1
 A E 7
 B C 1
 C D 1
+```
 
 Assumptions and Design Choices
 Two-Way Paths: The implementation assumes that all network links are symmetric, meaning the cost to travel from Node A to Node B is the same as the cost to travel from Node B to Node A.
