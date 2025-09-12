@@ -24,12 +24,12 @@ This repo contains implementations of core distributed system algorithms and uni
 ## 🚀 Implemented So Far
 
  Distance Vector Routing (Bellman–Ford style)    <br>
- Link State Routing (Dijkstra)
- Lamport’s Logical Clocks                ( Uploading Soon )
- Ricart–Agrawala Mutual Exclusion        ( Uploading Soon )
- Chandy–Lamport Snapshot Algorithm       ( Uploading Soon )
- Two-Phase Commit Protocol               ( Uploading Soon )
-(This list will grow as I progress through my course and personal practice.)
+ Link State Routing (Dijkstra) <br>
+ Lamport’s Logical Clocks                ( Uploading Soon ) <br>
+ Ricart–Agrawala Mutual Exclusion        ( Uploading Soon ) <br>
+ Chandy–Lamport Snapshot Algorithm       ( Uploading Soon ) <br>
+ Two-Phase Commit Protocol               ( Uploading Soon ) <br>
+(This list will grow as I progress through my course and personal practice.) <br>
 
 ## 🛠 How to Run
 
