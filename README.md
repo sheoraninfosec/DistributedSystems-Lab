@@ -9,7 +9,6 @@ This repo contains implementations of core distributed system algorithms and uni
 ```
 📦 distributed-systems
  ┣ 📜 README.md
- ┣ 📜 results.md           # Recorded outputs of experiments
  ┣ 📂 algorithms
  ┃ ┣ 📜 dvr_algorithm.py   # Distance Vector Routing
  ┃ ┣ 📜 lsr_algorithm.py   # Link State Routing
@@ -19,7 +18,7 @@ This repo contains implementations of core distributed system algorithms and uni
  ┃ ┣ 📜 lab2.py
  ┃ ┗ ...
  ┗ 📂 docs
-    ┗ 📜 reports, explanations, ER diagrams, etc.
+    ┗ 📜 reports, explanations, diagrams, etc.
 ```
 
 ## 🚀 Implemented So Far
