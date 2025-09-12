@@ -1,5 +1,5 @@
+##SIMPLE NETWORK
 ### INPUT 
-
 ```php
 Enter the number of nodes: 5
 Enter the number of edges: 5
@@ -11,7 +11,6 @@ B C 1
 C D 1
 ```
 ### OUTPUT 
-
 ```php
 -- Initial State of Routing Tables --
 *** Distance-Vector: Router A ***
@@ -120,8 +119,9 @@ D      8      A        E->A->D
 E      0      E        E
 ```
 
-sheoraninfosec@Mac Assignment2 % /usr/local/bin/python3 "/Users/sheoraninfosec/Document
-s/Masters UPES/Distributed Systems/Assignment2/dvr_algorithm.py"
+##DISCONNECTED NETWORK
+### INPUT
+```
 Enter the number of nodes: 5
 Enter the number of edges: 4
 Enter the node names (separated by spaces): A B C D E
@@ -233,6 +233,7 @@ B      INF    -        No Path
 C      INF    -        No Path
 D      INF    -        No Path
 E      0      E        E
+```
 
 sheoraninfosec@Mac Assignment2 % /usr/local/bin/python3 "/Users/sheoraninfosec/Document
 s/Masters UPES/Distributed Systems/Assignment2/dvr_algorithm.py"
