@@ -1,4 +1,4 @@
-##SIMPLE NETWORK
+## SIMPLE NETWORK
 ### INPUT 
 ```php
 Enter the number of nodes: 5
@@ -119,7 +119,7 @@ D      8      A        E->A->D
 E      0      E        E
 ```
 
-##DISCONNECTED NETWORK
+## DISCONNECTED NETWORK
 ### INPUT
 ```
 Enter the number of nodes: 5
@@ -235,19 +235,30 @@ D      INF    -        No Path
 E      0      E        E
 ```
 
-sheoraninfosec@Mac Assignment2 % /usr/local/bin/python3 "/Users/sheoraninfosec/Document
-s/Masters UPES/Distributed Systems/Assignment2/dvr_algorithm.py"
+## Network with Error / Incorrect Input Format
+### INPUT 
+```
 Enter the number of nodes: 5
 Enter the number of edges: 5
 Enter the node names (separated by spaces): A B C D E
 A B ONE
+```
+### OUTPUT 
+```
 Error reading input: invalid literal for int() with base 10: 'ONE'. Please check the input format.
-sheoraninfosec@Mac Assignment2 % /usr/local/bin/python3 "/Users/sheoraninfosec/Document
-s/Masters UPES/Distributed Systems/Assignment2/dvr_algorithm.py"
+```
+
+## Network with Error / Negative Weight
+### INPUT 
+```
 Enter the number of nodes: 4
 Enter the number of edges: 3
 Enter the node names (separated by spaces): A B C D
 A B 1
 B C 1
 C D -5
+```
+### OUTPUT 
+```
 Error reading input: Error: Negative weights are not allowed.. Please check the input format.
+```
