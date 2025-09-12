@@ -7,7 +7,7 @@ This code is written in Python 3. You can run the script directly from your term
 Save the file: Save the provided Python code as a file, for example, lsr_algorithm.py.
 
 Run the script: Open your terminal or command prompt, navigate to the directory where you saved the file, and execute the following command:
-```
+```php
 python3 lsr_algorithm.py
 ```
 
