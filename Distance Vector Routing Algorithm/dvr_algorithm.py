@@ -4,14 +4,14 @@
 
 import copy 
 
-def check_negative_weight(w):      #error handeling / weight cannot be -ve
+def negative_weight(w):      #error handeling / weight cannot be -ve
             if w < 0:
                 raise ValueError("Error: Negative weights are not allowed.")
                 
-# cost = infinty when path is unknown
+# cost = infinty / when path is unknown
 INFINITY = float('inf')
 
-def read_graph_from_input():      # reading & handeling user input
+def read_graph_input():      # reading & handeling user input
     try:
         num_nodes = int(input("Enter the number of nodes: "))
         num_edges = int(input("Enter the number of edges: "))
@@ -23,7 +23,7 @@ def read_graph_from_input():      # reading & handeling user input
         for _ in range(num_edges):
             u, v, w_str = input().split()
             w = int(w_str)
-            check_negative_weight(w)
+            negative_weight(w)
             graph[u][v] = graph[v][u] = w      #two way path       
         return nodes, graph
         
@@ -31,7 +31,7 @@ def read_graph_from_input():      # reading & handeling user input
         print(f"Error reading input: {e}. Please check the input format.")
         exit()
 
-def initialize_routing_tables(nodes, graph):  # ITERATION 0
+def start_routing_table(nodes, graph):  # ITERATION 0
     tables = {}
     for node in nodes:
         tables[node] = {}
@@ -47,7 +47,7 @@ def initialize_routing_tables(nodes, graph):  # ITERATION 0
                 tables[node][dest] = (INFINITY, None)
     return tables
 
-def distance_vector_routing(nodes, graph, tables):
+def dvr_algorithm(nodes, graph, tables):
     # ENGINE OF OUR DISTANCE-VECTOR ALGORITHM 
     iterations = 0
     while True:
@@ -84,7 +84,7 @@ def distance_vector_routing(nodes, graph, tables):
             
     return tables, iterations
 
-def reconstruct_path(start_node, dest_node, tables):
+def recreate_path(start_node, dest_node, tables):
     
     # trace full path from start node to destination node
     if tables[start_node][dest_node][0] == INFINITY:
@@ -105,7 +105,7 @@ def reconstruct_path(start_node, dest_node, tables):
         
     return "->".join(path)
 
-def print_routing_tables(nodes, tables):
+def print_routing_table(nodes, tables):
     # PRINTING FINAL ROUTING TABLE
     
     for node in sorted(nodes):
@@ -119,23 +119,23 @@ def print_routing_tables(nodes, tables):
             cost_str = str(cost) if cost != INFINITY else "INF"
             next_hop_str = next_hop if next_hop is not None else "-"
             
-            path_str = reconstruct_path(node, dest, tables)  # reconstruct & get path for current route
+            path_str = recreate_path(node, dest, tables)  # recreate & get path for current route
             print(f"{dest:<6} {cost_str:<6} {next_hop_str:<8} {path_str}")
         print()
 
 if __name__ == "__main__":
-    nodes, graph = read_graph_from_input()
+    nodes, graph = read_graph_input()
     
-    initial_tables = initialize_routing_tables(nodes, graph)
+    initial_tables = start_routing_table(nodes, graph)
     
     print("-- Initial State of Routing Tables --")
-    print_routing_tables(nodes, initial_tables)
+    print_routing_table(nodes, initial_tables)
     
     print("\nStarting Distance-Vector Algorithm.........\n")
     
-    final_tables, num_iterations = distance_vector_routing(nodes, graph, initial_tables)
+    final_tables, num_iterations = dvr_algorithm(nodes, graph, initial_tables)
     
     # -1 because last loop only confirms no more updates needed
     print(f"\nConvergence achieved after {num_iterations - 1} update iterations.\n") 
-    print_routing_tables(nodes, final_tables)
+    print_routing_table(nodes, final_tables)
 
