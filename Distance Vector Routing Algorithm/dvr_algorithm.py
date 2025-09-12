@@ -11,7 +11,7 @@ def negative_weight(w):      #error handeling / weight cannot be -ve
 # cost = infinty / when path is unknown
 INFINITY = float('inf')
 
-def read_graph_input():      # reading & handeling user input
+def read_input():      # reading & handeling user input
     try:
         num_nodes = int(input("Enter the number of nodes: "))
         num_edges = int(input("Enter the number of edges: "))
@@ -124,7 +124,7 @@ def print_routing_table(nodes, tables):
         print()
 
 if __name__ == "__main__":
-    nodes, graph = read_graph_input()
+    nodes, graph = read_input()
     
     initial_tables = start_routing_table(nodes, graph)
     
