@@ -11,7 +11,7 @@ B C 1
 C D 1
 ```
 ### OUTPUT 
-```php
+```
 -- Initial State of Routing Tables --
 *** Distance-Vector: Router A ***
 Dest   Cost   NextHop  Path
